@@ -6,13 +6,23 @@
     <link rel="stylesheet" href="../dist/output.css" />
     <title>project 2</title>
   </head>
-  <body class="m-0 p-0 box-border">
-    <header>
-      <nav class="flex justify-around py-4 bg-green-500 text-white">
-        <h1 class="flex justify-center items-center text-3xl gap-4">
-          <img src="favicon.ico" alt="favicon" class="h-8" /> acme rockets
+  <body
+    class="m-0 p-0 box-border min-h-screen bg-slate-50 dark:bg-black dark:text-white"
+  >
+    <header class="bg-teal-700 text-white sticky top-0 z-10">
+      <nav class="flex max-w-4xl mx-auto justify-between py-4">
+        <h1 class="flex text-3xl font-semibold">
+          <a href="" class="" id="hero">🚀 Acme Rockets</a>
         </h1>
-        <ul class="flex items-center text-xl gap-10">
+        <div>
+          <button
+            id="mobile-open-button"
+            class="text-3xl sm:hidden focus:outline-none"
+          >
+            &#9776;
+          </button>
+        </div>
+        <ul class="flex items-center text-xl font-semibold space-x-8">
           <li><a href="#our-rockets">Our Rockets</a></li>
           <li><a href="#testimonials">Testimonials</a></li>
           <li><a href="#contact-us">Contact Us</a></li>
@@ -140,13 +150,13 @@
               placeholder="Your Message"
               class="bg-white text-black placeholder-gray-400 w-full h-30 resize-none rounded-sm p-2"
             ></textarea>
-            <button class="px-5 py-1 bg-green-700 text-white rounded-sm w-min">
+            <button class="px-5 py-1 bg-teal-700 text-white rounded-sm w-min">
               Submit
             </button>
           </form>
         </section>
       </div>
-      <footer class="bg-green-700 text-white flex justify-around py-2.5 mt-7.5">
+      <footer class="bg-teal-700 text-white flex justify-around py-2.5 mt-7.5">
         <ul>
           <li>Acme Rocket-Powered Products, Inc</li>
           <li>555 Astro Way</li>
@@ -165,12 +175,12 @@
         </ul>
       </footer>
       <div
-        class="bg-green-600 text-white font-semibold text-center text-2xl leading-15"
+        class="bg-teal-700 text-white font-semibold text-center text-2xl leading-15"
       >
         <ul>
-          <li class="hover:bg-green-400 duration-600">Our Rockets</li>
-          <li class="hover:bg-green-400 duration-600">Testimonials</li>
-          <li class="hover:bg-green-40 duration-600">Contact Us</li>
+          <li class="hover:bg-teal-400 duration-600">Our Rockets</li>
+          <li class="hover:bg-teal-400 duration-600">Testimonials</li>
+          <li class="hover:bg-teal-400 duration-600">Contact Us</li>
         </ul>
       </div>
     </main>
