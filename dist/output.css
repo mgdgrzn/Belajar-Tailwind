@@ -10,7 +10,6 @@
       "Courier New", monospace;
     --color-red-50: oklch(97.1% 0.013 17.38);
     --color-red-500: oklch(63.7% 0.237 25.331);
-    --color-red-600: oklch(57.7% 0.245 27.325);
     --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-teal-400: oklch(77.7% 0.152 181.912);
     --color-teal-500: oklch(70.4% 0.14 182.503);
@@ -244,20 +243,8 @@
   .mx-auto {
     margin-inline: auto;
   }
-  .my-5 {
-    margin-block: calc(var(--spacing) * 5);
-  }
-  .my-10 {
-    margin-block: calc(var(--spacing) * 10);
-  }
   .my-12 {
     margin-block: calc(var(--spacing) * 12);
-  }
-  .my-40 {
-    margin-block: calc(var(--spacing) * 40);
-  }
-  .my-500 {
-    margin-block: calc(var(--spacing) * 500);
   }
   .-mt-0 {
     margin-top: calc(var(--spacing) * -0);
@@ -283,20 +270,11 @@
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
   }
-  .mb-7 {
-    margin-bottom: calc(var(--spacing) * 7);
-  }
-  .mb-7\.5 {
-    margin-bottom: calc(var(--spacing) * 7.5);
-  }
   .mb-12 {
     margin-bottom: calc(var(--spacing) * 12);
   }
   .mb-15 {
     margin-bottom: calc(var(--spacing) * 15);
-  }
-  .mb-20 {
-    margin-bottom: calc(var(--spacing) * 20);
   }
   .box-border {
     box-sizing: border-box;
@@ -394,8 +372,14 @@
   .scroll-mt-20 {
     scroll-margin-top: calc(var(--spacing) * 20);
   }
+  .scroll-mt-30 {
+    scroll-margin-top: calc(var(--spacing) * 30);
+  }
   .scroll-mt-40 {
     scroll-margin-top: calc(var(--spacing) * 40);
+  }
+  .scroll-mt-50 {
+    scroll-margin-top: calc(var(--spacing) * 50);
   }
   .list-none {
     list-style-type: none;
@@ -609,9 +593,6 @@
   }
   .text-gray-400 {
     color: var(--color-gray-400);
-  }
-  .text-gray-500 {
-    color: var(--color-gray-500);
   }
   .text-indigo-700 {
     color: var(--color-indigo-700);
@@ -1042,24 +1023,9 @@
       border-color: var(--color-gray-100);
     }
   }
-  .dark\:border-red-50 {
-    @media (prefers-color-scheme: dark) {
-      border-color: var(--color-red-50);
-    }
-  }
-  .dark\:border-red-500 {
-    @media (prefers-color-scheme: dark) {
-      border-color: var(--color-red-500);
-    }
-  }
   .dark\:bg-black {
     @media (prefers-color-scheme: dark) {
       background-color: var(--color-black);
-    }
-  }
-  .dark\:bg-slate-900 {
-    @media (prefers-color-scheme: dark) {
-      background-color: var(--color-slate-900);
     }
   }
   .dark\:bg-white {
