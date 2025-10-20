@@ -154,9 +154,9 @@
               class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative"
             >
               <p
-                class="text-white text-2xl sm:text-3xl text-left mt-2 dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-slate-400 before:opcity-25 before:transform before:traslate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-slate-400 after:opcity-25 after:transform after:traslate-x-2 after:translate-y-2"
+                class="text-white text-2xl sm:text-3xl text-left mt-2 dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-slate-400 before:opcity-25 before:transform before:traslate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-slate-400 after:opcity-25 after:transform after:-traslate-x-2 after:-translate-y-2"
               >
-                acme has always been there for me. their explorer rocket arrived
+                Acme has always been there for me. their explorer rocket arrived
                 in a wooden crate as expected. life-long customer! a++ shopping
                 experience.
               </p>
@@ -172,9 +172,9 @@
               class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative"
             >
               <p
-                class="text-white text-2xl sm:text-3xl text-left mt-2 dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-slate-400 before:opcity-25 before:transform before:traslate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-slate-400 after:opcity-25 after:transform after:traslate-x-2 after:translate-y-2"
+                class="text-white text-2xl sm:text-3xl text-left mt-2 dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-slate-400 before:opcity-25 before:transform before:traslate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-slate-400 after:opcity-25 after:transform after:-traslate-x-2 after:-translate-y-2"
               >
-                the acme adventurer rocket has thwarted my illudium q-36
+                The acme adventurer rocket has thwarted my illudium q-36
                 explosive space modulator on several occassions.
                 <span class="italic"> this makes me very, very angry! </span>
                 nevertheless, k-9 and i have awarded acme the martian contract
@@ -193,19 +193,19 @@
               class="bg-teal-600 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative"
             >
               <p
-                class="text-white text-2xl sm:text-3xl text-left mt-2 dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-slate-400 before:opcity-25 before:transform before:traslate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-slate-400 after:opcity-25 after:transform after:traslate-x-2 after:translate-y-2"
+                class="text-white text-2xl sm:text-3xl text-left mt-2 dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-slate-400 before:opcity-25 before:transform before:traslate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-slate-400 after:opcity-25 after:transform after:-traslate-x-2 after:-translate-y-2"
               >
-                i knew i not only wanted --<span class="italic">i needed</span
-                >-- acme's infinity rocket for my mission in space. acme
-                delivered in one day! nothing says "<span class="italic"
-                  >take me to your leader</span
+                I knew i not only wanted &#8212;
+                <span class="italic">i needed</span> &#8212; acme's infinity
+                rocket for my mission in space. acme delivered in one day!
+                nothing says "<span class="italic">take me to your leader</span
                 >" like acme's infinity rocket! 💯
               </p>
             </blockquote>
             <figcaption
               class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400"
             >
-              &#8212;wile e. coyote, genius
+              &#8212;Buzz Lightyear
             </figcaption>
           </article>
         </div>
@@ -216,31 +216,48 @@
         class="bg-black w-1/2 mx-auto mt-20 mb-15 dark:bg-white scroll-mt-20"
       />
 
-      <section class="text-center mx-2.5">
+      <section class="p-6 my-12">
         <h1
           class="text-4xl text-center text-slate-900 font-bold mb-15 sm:text-5xl dark:text-white"
         >
           Contact Us
         </h1>
-        <form action="" class="text-white grid gap-2 text-left text-2xl">
-          <p>Subject:</p>
+        <form
+          action=""
+          class="dark:text-white flex flex-col items-start gap-4 text-left text-2xl sm:text-3xl max-w-4xl mx-auto"
+        >
+          <label for="subject">Subject:</label>
           <input
             type="text"
-            class="bg-white text-black placeholder-gray-400 w-full rounded-sm p-2"
-            placeholder="your subject"
+            id="subject"
+            required
+            minlength="3"
+            maxlength="60 "
+            class="bg-white text-black placeholder-gray-400 w-full text-2xl sm:text-3xl rounded-xl border border-solid border-slate-900 dark:border-none p-3"
+            placeholder="Your Subject"
           />
           <br />
-          <p>message:</p>
+          <label for="message">Message:</label>
           <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
             placeholder="your message"
-            class="bg-white text-black placeholder-gray-400 w-full h-30 resize-none rounded-sm p-2"
+            required
+            class="bg-white text-black placeholder-gray-400 w-full text-2xl sm:text-3xl rounded-xl border border-solid border-slate-900 dark:border-none p-3"
           ></textarea>
-          <button class="px-5 py-1 bg-teal-700 text-white rounded-sm w-min">
-            submit
+          <button
+            class="p-3 bg-teal-700 text-white rounded-xl w-48 border border-solid border-slate-900 dark:border-none"
+          >
+            Submit
           </button>
         </form>
       </section>
-      <footer class="bg-teal-700 text-white flex justify-around py-2.5 mt-7.5">
+      <footer
+        id="footer"
+        class="bg-teal-700 text-white text-xl flex justify-around py-2.5 mt-7.5"
+      >
         <ul>
           <li>acme rocket-powered products, inc</li>
           <li>555 astro way</li>
@@ -258,7 +275,7 @@
           <li>all rights reserved</li>
         </ul>
       </footer>
-      <div
+      <!-- <div
         class="bg-teal-700 text-white font-semibold text-center text-2xl leading-15"
       >
         <ul>
@@ -266,7 +283,7 @@
           <li class="hover:bg-teal-400 duration-600">testimonials</li>
           <li class="hover:bg-teal-400 duration-600">contact us</li>
         </ul>
-      </div>
+      </div> -->
     </main>
   </body>
 </html>
