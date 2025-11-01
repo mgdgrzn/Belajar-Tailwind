@@ -1,0 +1,25 @@
+{
+  "name": "learning-tailwind",
+  "version": "1.0.0",
+  "description": "isinya cuman belajar doang",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "prettier": "npx prettier --write '**/*.html'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgdgrzn/Belajar-Tailwind.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mgdgrzn/Belajar-Tailwind/issues"
+  },
+  "homepage": "https://github.com/mgdgrzn/Belajar-Tailwind#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.13",
+    "tailwindcss": "^4.1.13"
+  }
+}
