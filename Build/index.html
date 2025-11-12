@@ -17,8 +17,8 @@
         </h1>
         <div>
           <button
-            id="mobile-open-button"
-            class="text-3xl md:hidden focus:outline-none"
+            id="humberger-button"
+            class="text-3xl md:hidden cursor-pointer"
           >
             &#9776;
           </button>
@@ -33,6 +33,33 @@
           <li><a href="#contact-us" class="hover:opacity-90">Contact Us</a></li>
         </ul>
       </nav>
+      <section
+        id="mobile-menu"
+        class="top-0 bg-black w-full text-5xl flex flex-col justify-center"
+      >
+        <button class="text-8xl self-end px-6">&times;</button>
+        <nav
+          class="flex flex-col min-h-screen items-center py-8"
+          aria-label="mobile"
+        >
+          <a href="#hero" class="w-full text-center py-6 hover:opacity-90"
+            >Home</a
+          >
+          <a
+            href="#our-rockets"
+            class="w-full text-center py-6 hover:opacity-90"
+            >Our Rockets</a
+          >
+          <a
+            href="#testimonials"
+            class="w-full text-center py-6 hover:opacity-90"
+            >Testimonials</a
+          >
+          <a href="#contact-us" class="w-full text-center py-6 hover:opacity-90"
+            >Contact Us</a
+          >
+        </nav>
+      </section>
     </header>
     <main id="hero" class="max-w-4xl mx-auto scroll-mt-50">
       <section
