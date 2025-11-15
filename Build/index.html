@@ -5,41 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../dist/output.css" />
     <link rel="icon" href="favicon.ico" />
+    <script src="./js/main.js" defer></script>
     <title>Acme Rockets</title>
   </head>
   <body
     class="m-0 p-0 box-border min-h-screen bg-slate-50 dark:bg-black dark:text-white"
   >
     <header class="bg-teal-700 text-white sticky top-0 z-10">
-      <nav class="flex max-w-4xl mx-auto justify-between p-4">
+      <section class="flex max-w-4xl mx-auto justify-between p-4">
         <h1 class="text-3xl font-semibold">
           <a href="#hero" class="">🚀 Acme Rockets</a>
         </h1>
         <div>
           <button
             id="humberger-button"
-            class="text-3xl md:hidden cursor-pointer"
+            class="relative h-8 w-8 text-3xl md:hidden cursor-pointer"
           >
-            &#9776;
+            <!-- &#9776; -->
           </button>
         </div>
-        <ul class="hidden md:flex items-center text-xl font-semibold space-x-8">
-          <li>
-            <a href="#our-rockets" class="hover:opacity-90">Our Rockets</a>
-          </li>
-          <li>
-            <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
-          </li>
-          <li><a href="#contact-us" class="hover:opacity-90">Contact Us</a></li>
-        </ul>
-      </nav>
-      <section
-        id="mobile-menu"
-        class="top-0 bg-black w-full text-5xl flex flex-col justify-center origin-top animeanimate-open-menu"
-      >
-        <!-- ini kenapa animate-open-menu nya gak jalan -->
-        <button class="text-8xl self-end px-6">&times;</button>
         <nav
+          class="hidden md:flex items-center text-xl font-semibold space-x-8"
+          aria-label="main"
+        >
+          <a href="#our-rockets" class="hover:opacity-90">Our Rockets</a>
+          <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+          <a href="#contact-us" class="hover:opacity-90">Contact Us</a>
+        </nav>
+      </section>
+      <!-- <section
+        id="mobile-menu"
+        class="top-68 bg-black w-full text-5xl flex flex-col justify-center origin-top animate-open-menu"
+      > -->
+      <!-- ini kenapa animate-open-menu nya gak jalan -->
+      <!-- <button class="text-8xl self-end px-6 cursor-pointer">&times;</button> -->
+      <!-- <nav
           class="flex flex-col min-h-screen items-center py-8"
           aria-label="mobile"
         >
@@ -63,7 +63,7 @@
             >Legal</a
           >
         </nav>
-      </section>
+      </section> -->
     </header>
     <main id="hero" class="max-w-4xl mx-auto scroll-mt-50">
       <section
